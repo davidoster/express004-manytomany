@@ -12,14 +12,15 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       // One To Many - Customer To Order
-      Order.belongsTo(models.Customer);
+      // Order.belongsTo(models.Customer);
       
       // One To Many - Order to OrderDetails
-      Order.hasMany(models.OrderDetails);
+      // Order.hasMany(models.OrderDetails);
+      Order.belongsToMany(models.Product, { through: models.OrderDetails });
     }
   }
   Order.init({
-    customerId: DataTypes.INTEGER,
+    // customerId: DataTypes.INTEGER,
     totalprice: DataTypes.DOUBLE
   }, {
     sequelize,
