@@ -15,9 +15,10 @@
   },
   "production": {
     "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "password": "AFDEmp_MySQL1",
+    "database": "heroku-express",
+    "host": "ra1.anystream.eu",
+    "port": "1922",
     "dialect": "mysql"
   }
 }
