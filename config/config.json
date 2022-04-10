@@ -16,7 +16,7 @@
   "production": {
     "username": "root",
     "password": "AFDEmp_MySQL1",
-    "database": "heroku-express",
+    "database": "heroku_express",
     "host": "ra1.anystream.eu",
     "port": "1922",
     "dialect": "mysql"
